@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 30px;
+}
+
+.container {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"]{
+    display: inline-block;
+    padding: 5px;
+    margin: 10px 5px;
+    width: 100px;
+}
+
+label {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.note {
+    color: red;
+    font-size: 14px;
+}
+
+#captcha-image {
+    margin: 20px;
+    font-size: 24px;
+    color: #3b4dbf;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.buttons button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #0074a2;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#submit-btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #006d8f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.header {
+    width: 100%;
+    position: fixed; /* Sticks the header to the top */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header img {
+    display: block;
+    max-width: 100%; /* Ensures the image scales responsively */
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stacks content vertically on smaller screens */
+        padding: 15px;
+    }
+}
+
+.select {
+    display: inline-block;
+    width: 50px; /* 可根據需要調整寬度 */
+}
+
+.title {
+    color: #3b4dbf;
+    font-weight: normal; /* Removes bold styling */
+    text-align: center;
+    margin-top: 200px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
