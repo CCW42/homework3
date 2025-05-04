@@ -64,6 +64,7 @@ label {
     position: fixed; /* Sticks the header to the top */
     top: 0;
     left: 0;
+    right: 0;
     z-index: 1000;
 }
 

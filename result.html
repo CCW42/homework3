@@ -1,11 +1,58 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
-  <title>查詢結果</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>停車費查詢</title>
+  <link rel="stylesheet" href="result.css">
 </head>
 <body>
-<h2>查詢成功</h2>
-<p>這是查詢後的結果頁面。</p>
+<div class="container">
+  <h1>停車費查詢</h1>
+  <button class="back-button">回列表頁</button>
+  <div class="warning">
+    注意：請勿使用回收紙、噴墨印表機、撞針式印表機列印
+  </div>
+  <div class="vehicle-info">
+    <p>車號：ABC-1234 車種：機車</p>
+    <p>停車費用細 (每回筆數：1，總計：9487元)</p>
+    <p class="red-text">逾停車單繳費期限之車輛資料將無法列印</p>
+  </div>
+  <div class="display-options">
+    <label for="display-count">每頁顯示</label>
+    <input type="number" id="display-count" name="display-count" value="5"> 筆
+  </div>
+  <table>
+    <thead>
+    <tr>
+      <th>停車日期</th>
+      <th>停車時間</th>
+      <th>離場時間</th>
+      <th>停車單號</th>
+      <th>單據狀態</th>
+      <th>應繳金額</th>
+      <th>繳費</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>2025-04-31</td>
+      <td>08:30</td>
+      <td>12:45</td>
+      <td>ABC-1234</td>
+      <td>未繳費</td>
+      <td>9487元</td>
+      <td><button class="pay-button">立即繳費</button></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <div class="pagination">
+    <button class="prev-page">上一頁</button>
+    <button class="next-page">下一頁</button>
+  </div>
+  <p class="note">本網路查詢僅供參考，仍以實際資料為準！</p>
+</div>
+<script src="result.js"></script>
 </body>
 </html>

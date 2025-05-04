@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #007bff;
+}
+
+.back-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.warning {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 10px;
+    border: 1px solid #ffeeba;
+    margin: 10px 0;
+}
+
+.vehicle-info p {
+    margin: 5px 0;
+}
+
+.red-text {
+    color: red;
+}
+
+.display-options {
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.note {
+    color: #888;
+    font-size: 0.9em;
+}
