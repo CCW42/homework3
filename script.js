@@ -7,10 +7,6 @@ function refreshCaptcha() {
     document.getElementById('captcha-image').textContent = code;
 }
 
-function playCaptchaAudio() {
-    alert("播放語音功能未實作。");
-}
-
 document.getElementById('query-form').addEventListener('submit', function (e) {
     e.preventDefault();
 
